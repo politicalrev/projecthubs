@@ -8,7 +8,7 @@ title: TPR Projects
 <ul class="normal">
   {% for project in site.pages%}
   {% if project.layout == "project" %}
-    <li><a href={{ project.url }}>{{ project.title }}</a></li>
+    <li><a href={{ site.baseurl}}{{ project.url }}>{{ project.title }}</a></li>
   {% endif %}
   {% endfor %}
 </ul>
