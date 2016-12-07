@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+	<h1>{{ page.title }} Project Timeline</h1>
+	<ol class="timeline">
+    {% for node in site.posts %}
+      <li class="tl-node">
+			  <div class="tl-stamp">{{ node.date | date_to_long_string }}</div>
+			  <h2 class="tl-content">{{ node.title }}</h2>
+        {{ node.content }}
+	  	</li>
+    {% endfor %}
+	</ol>
